@@ -22,9 +22,9 @@ def getInput():
     keyword = ""
     max_tweets = ""
     while keyword.isalnum() == False or len(keyword) >= 64:
-        keyword = input("Type in a correct keyword (alphanumeric with at least one character)")
+        keyword = input("Type in a correct keyword (alphanumeric with at least one character): ")
     while max_tweets.isdigit() == False:
-        max_tweets = input("Type in a maximum number of tweets you want to get")
+        max_tweets = input("Type in a maximum number of tweets you want to get: ")
     return keyword, int(max_tweets)
 
 
